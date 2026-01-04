@@ -5,6 +5,12 @@
   color: white;
   border: none;
   transition: background-position 0.4s ease;
+  font-family: DM Sans;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: 0%;
+  text-align: center;
+
   &:hover {
     background-position: right center;
     cursor: pointer;

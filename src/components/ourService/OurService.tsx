@@ -34,8 +34,8 @@ const OurService: React.FC = () => {
                 stagger: 0.3,
                 scrollTrigger: {
                     trigger: ".content",
-                    start: "top center",
-                    end: "bottom top",
+                    start: "top bottom",
+                    end: "bottom center",
                     scrub: true
                 },
             }
@@ -49,14 +49,12 @@ const OurService: React.FC = () => {
                 stagger: 0.3,
                 scrollTrigger: {
                     trigger: ".content",
-                    start: "top center",
+                    start: "top bottom",
                     end: "bottom top",
                     scrub: true
                 },
             }
         );
-
-
 
     }, []);
 

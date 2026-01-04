@@ -9,12 +9,12 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 const Banner: React.FC = () => {
     const imgRef = useRef<HTMLImageElement | null>(null);
-
+    ScrollTrigger.config({
+        ignoreMobileResize: true,
+    });
     useEffect(() => {
         gsap.registerPlugin(ScrollTrigger);
-        ScrollTrigger.config({
-            ignoreMobileResize: true,
-        });
+
         gsap.fromTo(
             ".bannerTitle",
             { x: -50, opacity: 0 },

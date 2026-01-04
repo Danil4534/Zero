@@ -21,7 +21,7 @@ const Header: React.FC = () => {
     gsap.timeline()
     gsap.fromTo(".logo", { y: 50, opacity: 0, }, { y: 0, stagger: 0.5, opacity: 1 })
     gsap.fromTo("nav ul li", { y: 50, opacity: 0 }, { y: 0, stagger: 0.5, opacity: 1 })
-    gsap.fromTo(".headerBtn", { x: 100, opacity: 0 }, { x: 0, opacity: 1, delay: 1 })
+    gsap.fromTo(".headerBtn", { x: 50, opacity: 0 }, { x: 0, opacity: 1, delay: 1 })
   }, [])
 
   return (

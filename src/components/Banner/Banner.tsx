@@ -14,7 +14,7 @@ const Banner: React.FC = () => {
         gsap.registerPlugin(ScrollTrigger);
         gsap.fromTo(
             ".bannerTitle",
-            { x: -100, opacity: 0 },
+            { x: -50, opacity: 0 },
             {
                 x: 0,
                 opacity: 1,
@@ -27,7 +27,7 @@ const Banner: React.FC = () => {
         );
         gsap.fromTo(
             ".bannerSubtitle",
-            { x: -100, opacity: 0 },
+            { x: -50, opacity: 0 },
             {
                 x: 0,
                 opacity: 1,
@@ -40,7 +40,7 @@ const Banner: React.FC = () => {
         );
         gsap.fromTo(
             ".bannerActions",
-            { x: -100, opacity: 0 },
+            { x: -50, opacity: 0 },
             {
                 x: 0,
                 opacity: 1,

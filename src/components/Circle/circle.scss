@@ -43,3 +43,26 @@
     background-color: rgba(29, 78, 216, 0.5);
   }
 }
+@media (max-width: 450px) {
+  .circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 9999px;
+    filter: blur(200px);
+  }
+  .circle1 {
+    background-color: rgba(29, 78, 216, 0.5);
+  }
+  .circle2 {
+    background-color: rgba(81, 65, 218, 1);
+  }
+  .circle3 {
+    background-color: rgba(217, 70, 239, 1);
+  }
+  .circle4 {
+    background-color: rgba(29, 78, 216, 0.5);
+  }
+  .circle5 {
+    background-color: rgba(29, 78, 216, 0.5);
+  }
+}

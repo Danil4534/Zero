@@ -101,3 +101,64 @@
     }
   }
 }
+@media (max-width: 450px) {
+  .sectionWelcome {
+    margin: 0 auto;
+    position: relative;
+    padding: 0 10px;
+
+    gap: 20px;
+    .circle1 {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+    .circle2 {
+      position: absolute;
+      right: 0;
+    }
+    .circle3 {
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      background: linear-gradient(90deg, #1e40af 0%, #c026d3 50%);
+      left: 150px;
+    }
+    h1 {
+      font-size: 24px;
+    }
+    p {
+      font-size: 14px;
+    }
+    img {
+      width: 60%;
+    }
+    .welcomeItem1 {
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      flex-direction: column;
+
+      .welcomeContent {
+        .welcomeBtn {
+          padding: 10px 40px;
+          border-radius: 6px;
+        }
+      }
+    }
+    .welcomeItem2 {
+      display: flex;
+      align-items: center;
+      text-align: center;
+      flex-direction: column;
+      margin-bottom: 20px;
+      .welcomeContent2 {
+        .welcomeBtn {
+          padding: 10px 40px;
+          border-radius: 6px;
+        }
+      }
+    }
+  }
+}

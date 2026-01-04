@@ -79,7 +79,9 @@ const Banner: React.FC = () => {
         };
 
         window.addEventListener("mousemove", handleMouseMove);
-
+        if (window.innerWidth <= 768) {
+            window.removeEventListener("mousemove", handleMouseMove);
+        }
         return () => {
             window.removeEventListener("mousemove", handleMouseMove);
         };

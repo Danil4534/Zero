@@ -18,7 +18,7 @@ const Welcome: React.FC = () => {
             y: 0, x: 0, stagger: 0.5, opacity: 1, delay: 1.2, scrollTrigger: {
                 trigger: ".sectionWelcome",
                 start: "top bottom",
-                end: "bottom center",
+                end: "bottom bottom",
                 scrub: true
             },
         })
@@ -27,7 +27,7 @@ const Welcome: React.FC = () => {
             y: 0, x: 0, stagger: 0.5, opacity: 1, delay: 1.2, scrollTrigger: {
                 trigger: ".sectionWelcome",
                 start: "top bottom",
-                end: "bottom center",
+                end: "bottom bottom",
                 scrub: true
             },
         })

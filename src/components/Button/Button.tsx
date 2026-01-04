@@ -1,13 +1,14 @@
+import "./button.scss"
 
 type ButtonProps = {
-  
+
   children: React.ReactNode;
   className?: string;
-  type?: "button" | "submit" | "reset";   
+  type?: "button" | "submit" | "reset";
 };
-const Button:React.FC<ButtonProps> =({  children, className, type }: ButtonProps) => {
+const Button: React.FC<ButtonProps> = ({ children, className, type }: ButtonProps) => {
   return (
-    <button className={className} type={type}>
+    <button className={`btn ${className}`} type={type}>
       {children}
     </button>
   );

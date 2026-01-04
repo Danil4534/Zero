@@ -1,0 +1,99 @@
+.banner {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  perspective: 1000px;
+
+  .bannerContent {
+    z-index: 2;
+  }
+
+  .circle1 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  .circle2 {
+    position: absolute;
+    right: 0;
+  }
+  .circle3 {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    background: linear-gradient(90deg, #1e40af 0%, #c026d3 50%);
+    left: 150px;
+  }
+  h1 {
+    text-align: left;
+    background: linear-gradient(90deg, #1e40af 0%, #c026d3 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    font-weight: 700;
+    font-size: 58px;
+    line-height: 84px;
+    letter-spacing: 2%;
+  }
+  p {
+    text-align: left;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 30px;
+    letter-spacing: 0%;
+    color: #e5e7eb;
+  }
+  .bannerActions {
+    display: flex;
+    gap: 30px;
+    margin-top: 30px;
+    .joinUsBtn {
+      padding: 20px 40px;
+      border-radius: 6px;
+      height: 61px;
+      font-family: DM Sans;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 100%;
+      letter-spacing: 0%;
+      z-index: 999;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+    p {
+      margin: 0;
+      font-weight: 500;
+      font-size: 16px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      line-height: 100%;
+      letter-spacing: 0%;
+      cursor: pointer;
+      &:hover span::after {
+        cursor: pointer;
+        width: 100%;
+        left: 0;
+        background: #fff;
+      }
+    }
+    span {
+      cursor: pointer;
+      position: relative;
+      &::after {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 2px;
+        display: block;
+        margin-top: 2px;
+        right: 0;
+        background: #fff;
+        transition: width 0.3s ease;
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+.btn {
+  background: linear-gradient(90deg, #1e40af, #c026d3, #1e40af);
+  background-size: 200% 100%;
+  background-position: left center;
+  color: white;
+  border: none;
+  transition: background-position 0.4s ease;
+  &:hover {
+    background-position: right center;
+    cursor: pointer;
+  }
+}

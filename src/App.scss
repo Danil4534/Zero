@@ -1,0 +1,58 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  
+  text-align: center;
+}
+
+
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+.background{
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+}
+.circle  {
+  width: 361px;
+  height: 361px;
+  border-radius: 9999px;
+  filter: blur(200px);
+}
+.circle1{
+  background-color: rgba(29, 78, 216, 0.5);
+}
+.circle2{
+  background-color: rgba(81, 65, 218, 1);
+}
+.circle3{
+  background-color: rgba(217, 70, 239, 1);
+}
+.circle4{
+  background-color: rgba(29, 78, 216, 0.5);
+}
+.circle5{
+  background-color: rgba(29, 78, 216, 0.5);
+}

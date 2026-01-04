@@ -12,15 +12,17 @@ import Welcome from "./components/Welcome/Welcome";
 function App() {
   return (
     <>
-      <Header />
-      <main>
-        <Banner />
-        <OurService />
-        <Welcome />
-        <MeetOurTeam />
-        <Subscribe />
-      </main >
-      <Footer />
+      <div className="container">
+        <Header />
+        <main>
+          <Banner />
+          <OurService />
+          <Welcome />
+          <MeetOurTeam />
+          <Subscribe />
+        </main >
+        <Footer />
+      </div>
     </>
 
 

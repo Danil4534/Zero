@@ -1,9 +1,16 @@
 .header {
   padding: 40px 0;
   margin: 0 auto;
-  display: flex;
+
   justify-content: space-between;
   align-items: center;
+
+  display: flex;
+
+  z-index: 998;
+  .burger {
+    display: none;
+  }
   nav {
     display: flex;
     align-items: center;
@@ -43,6 +50,63 @@
       padding: 10px 30px;
       border-radius: 6px;
       font-family: DM Sans;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 20px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    backdrop-filter: blur(10px);
+    width: 100%;
+    .burger {
+      display: block;
+    }
+    nav {
+      display: none;
+      align-items: center;
+      gap: 10px;
+      ul {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        gap: 60px;
+        li {
+          a {
+            text-decoration: none;
+            color: #fff;
+            cursor: pointer;
+            position: relative;
+            &::after {
+              content: "";
+              position: absolute;
+              width: 0;
+              height: 2px;
+              display: block;
+              margin-top: 2px;
+              right: 0;
+              background: #fff;
+              transition: width 0.3s ease;
+            }
+            &:hover::after {
+              width: 100%;
+              left: 0;
+              background: #fff;
+            }
+          }
+        }
+      }
+      .headerBtn {
+        padding: 10px 30px;
+        border-radius: 6px;
+        font-family: DM Sans;
+      }
     }
   }
 }

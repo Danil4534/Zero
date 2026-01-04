@@ -4,6 +4,7 @@ import Logo from "../../assets/logo.svg";
 import Button from "../Button/Button";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { TbBurger } from 'react-icons/tb';
 const Header: React.FC = () => {
   gsap.registerPlugin(ScrollTrigger);
   type LinkType = {
@@ -39,6 +40,7 @@ const Header: React.FC = () => {
         </ul>
         <Button className="headerBtn" type="button">Contact Us</Button>
       </nav>
+      <TbBurger className="burger" size={40} />
     </header>
   );
 };

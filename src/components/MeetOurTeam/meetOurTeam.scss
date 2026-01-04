@@ -64,3 +64,73 @@
     }
   }
 }
+@media (max-width: 768px) {
+  .meetOurTeam {
+    margin: 0 auto;
+    padding: 40px 10px;
+    place-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+    .circle1 {
+      position: absolute;
+      bottom: 0;
+    }
+    .circle2 {
+      position: absolute;
+      right: 0;
+    }
+    .circle3 {
+      position: absolute;
+      left: 0;
+    }
+    .contentTitle {
+      margin: 0;
+    }
+    .contentSubtitle {
+      margin: 0;
+      max-width: 480px;
+    }
+
+    .cardListPeople {
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+
+      .cardPeople {
+        border: 1px solid #ffffff12;
+        backdrop-filter: blur(100px);
+        border-radius: 34px;
+        padding: 30px;
+
+        img {
+          width: 50px;
+          height: 50px;
+          object-fit: cover;
+          object-position: center;
+          box-shadow: 0px 22px 18px 0px #0000000d;
+          border-radius: 999px;
+        }
+        h1 {
+          font-family: DM Sans;
+          font-weight: 500;
+          font-size: 24px;
+          leading-trim: NONE;
+          line-height: 100%;
+          letter-spacing: 0%;
+          margin: 0;
+        }
+        p {
+          font-size: 14px;
+        }
+        .listIcons {
+          display: flex;
+          justify-content: center;
+          gap: 10px;
+        }
+      }
+    }
+  }
+}

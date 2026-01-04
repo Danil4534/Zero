@@ -14,21 +14,20 @@ const Welcome: React.FC = () => {
     useEffect(() => {
 
         gsap.timeline()
-
-        gsap.fromTo(".welcomeSubtitle , .welcomeTitle, .welcomeBtn ", { y: 50, x: 0, opacity: 0 }, {
+        gsap.fromTo(".welcomeSubtitle , .welcomeTitle, .welcomeBtn ", { y: 50, x: 0, opacity: 0.5 }, {
             y: 0, x: 0, stagger: 0.5, opacity: 1, delay: 1.2, scrollTrigger: {
-                trigger: ".welcomeContent",
-                start: "top center",
-                end: "bottom top",
+                trigger: ".sectionWelcome",
+                start: "top bottom",
+                end: "bottom center",
                 scrub: true
             },
         })
 
-        gsap.fromTo(".imgMan", { x: 50, opacity: 0 }, {
+        gsap.fromTo(".imgMan", { x: 50, opacity: 0, }, {
             y: 0, x: 0, stagger: 0.5, opacity: 1, delay: 1.2, scrollTrigger: {
-                trigger: ".welcomeContent",
-                start: "top center",
-                end: "bottom top",
+                trigger: ".sectionWelcome",
+                start: "top bottom",
+                end: "bottom center",
                 scrub: true
             },
         })

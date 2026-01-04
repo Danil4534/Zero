@@ -43,8 +43,8 @@ const MeetOurTeam: React.FC = () => {
                 stagger: 0.3,
                 scrollTrigger: {
                     trigger: ".welcomeItem2",
-                    start: "top top",
-                    end: "bottom top",
+                    start: "top center",
+                    end: "center center",
                     scrub: true
                 },
             }

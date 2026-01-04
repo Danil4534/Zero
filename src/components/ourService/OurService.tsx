@@ -33,7 +33,22 @@ const OurService: React.FC = () => {
                 opacity: 1,
                 stagger: 0.3,
                 scrollTrigger: {
-                    trigger: ".content",
+                    trigger: ".ourService",
+                    start: "top bottom",
+                    end: "center center",
+                    scrub: true
+                },
+            }
+        );
+        gsap.fromTo(
+            ".contentSubtitle",
+            { opacity: 0, y: 0, },
+            {
+
+                opacity: 1,
+                stagger: 0.3,
+                scrollTrigger: {
+                    trigger: ".ourService",
                     start: "top bottom",
                     end: "bottom center",
                     scrub: true
@@ -41,26 +56,26 @@ const OurService: React.FC = () => {
             }
         );
         gsap.fromTo(
-            ".contentTitle, .contentSubtitle",
-            { y: 0, opacity: 0 },
+            ".contentTitle",
+            { opacity: 0, y: 0, },
             {
                 y: 0,
+
                 opacity: 1,
                 stagger: 0.3,
                 scrollTrigger: {
-                    trigger: ".content",
+                    trigger: ".ourService",
                     start: "top bottom",
-                    end: "bottom top",
+                    end: "bottom center",
                     scrub: true
                 },
             }
         );
-
     }, []);
 
 
     return (
-        <section className="content">
+        <section className="ourService">
             <Circle num={1}></Circle>
             <Circle num={2}></Circle>
             <Circle num={3}></Circle>

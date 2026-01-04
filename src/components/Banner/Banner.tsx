@@ -12,6 +12,9 @@ const Banner: React.FC = () => {
 
     useEffect(() => {
         gsap.registerPlugin(ScrollTrigger);
+        ScrollTrigger.config({
+            ignoreMobileResize: true,
+        });
         gsap.fromTo(
             ".bannerTitle",
             { x: -50, opacity: 0 },

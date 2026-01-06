@@ -120,6 +120,7 @@ const Banner: React.FC = () => {
             <img
                 ref={imgRef}
                 src={Saly}
+                loading="lazy"
                 className="bannerImg"
                 alt="VR character"
             />

@@ -1,7 +1,7 @@
-import { useEffect } from "react";
+
 import "./circle.scss";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/all";
+
+
 type CircleProps = {
     num?: number;
 };

@@ -4,7 +4,7 @@ import Banner from "./components/Banner/Banner";
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import MeetOurTeam from "./components/MeetOurTeam/MeetOurTeam";
-import OurService from "./components/ourService/OurService";
+import OurService from "./components/OurService/OurService";
 import Subscribe from "./components/Subscribe/Subscribe";
 import Welcome from "./components/Welcome/Welcome";
 

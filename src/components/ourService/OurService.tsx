@@ -44,7 +44,7 @@ const OurService: React.FC = () => {
             }
         );
         gsap.fromTo(
-            ".contentSubtitle",
+            ".ourServiceSubtitle",
             { opacity: 0, y: 0, },
             {
 
@@ -59,7 +59,7 @@ const OurService: React.FC = () => {
             }
         );
         gsap.fromTo(
-            ".contentTitle",
+            ".ourServiceTitle",
             { opacity: 0, y: 0, },
             {
                 y: 0,
@@ -82,10 +82,10 @@ const OurService: React.FC = () => {
             <Circle num={1}></Circle>
             <Circle num={2}></Circle>
             <Circle num={3}></Circle>
-            <h1 className="contentTitle">
+            <h1 className="ourServiceTitle">
                 Our Service
             </h1>
-            <p className="contentSubtitle">We trun information into actionable insights  We work to understand you issues and are driven to ask better questions in the pursuit of making work</p>
+            <p className="ourServiceSubtitle">We trun information into actionable insights  We work to understand you issues and are driven to ask better questions in the pursuit of making work</p>
             <div className="cardList">
                 {content.map((item: ContentType, index: number) => (
                     <div className="card" key={index}>

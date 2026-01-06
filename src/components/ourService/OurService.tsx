@@ -7,6 +7,9 @@ import gsap from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { SplitText } from "gsap/SplitText";
 import Circle from "../Circle/Circle"
+import { FaRegHandshake } from "react-icons/fa"
+import { IoAnalyticsOutline } from "react-icons/io5"
+import { RiSoundModuleLine } from "react-icons/ri"
 
 const OurService: React.FC = () => {
     gsap.registerPlugin(ScrollTrigger, SplitText);
@@ -19,9 +22,9 @@ const OurService: React.FC = () => {
         { title: "Order Management", subtitle: "Lorem ipsum dolor sit amet, consectetur the adipiscing elit. Sed quis accumsan nisi Ut ut felis congue nisl hendrerit commodo.", icon: <CiCircleList size={38} /> },
         { title: "Social Assistant", subtitle: "Lorem ipsum dolor sit amet, consectetur the adipiscing elit. Sed quis accumsan nisi Ut ut felis congue nisl hendrerit commodo.", icon: <CiDollar size={38} /> },
         { title: "Crypto Platform", subtitle: "Lorem ipsum dolor sit amet, consectetur the adipiscing elit. Sed quis accumsan nisi Ut ut felis congue nisl hendrerit commodo.", icon: <CiBitcoin size={38} /> },
-        { title: "Smart Trading Modules", subtitle: "Lorem ipsum dolor sit amet, consectetur the adipiscing elit. Sed quis accumsan nisi Ut ut felis congue nisl hendrerit commodo.", icon: <CiBitcoin size={38} /> },
-        { title: "Analyzer of the News", subtitle: "Lorem ipsum dolor sit amet, consectetur the adipiscing elit. Sed quis accumsan nisi Ut ut felis congue nisl hendrerit commodo.", icon: <CiBitcoin size={38} /> },
-        { title: "Module of Price Notification", subtitle: "Lorem ipsum dolor sit amet, consectetur the adipiscing elit. Sed quis accumsan nisi Ut ut felis congue nisl hendrerit commodo.", icon: <CiBitcoin size={38} /> },
+        { title: "Smart Trading Modules", subtitle: "Lorem ipsum dolor sit amet, consectetur the adipiscing elit. Sed quis accumsan nisi Ut ut felis congue nisl hendrerit commodo.", icon: <FaRegHandshake  size={38} /> },
+        { title: "Analyzer of the News", subtitle: "Lorem ipsum dolor sit amet, consectetur the adipiscing elit. Sed quis accumsan nisi Ut ut felis congue nisl hendrerit commodo.", icon: <IoAnalyticsOutline size={38} /> },
+        { title: "Module of Price Notification", subtitle: "Lorem ipsum dolor sit amet, consectetur the adipiscing elit. Sed quis accumsan nisi Ut ut felis congue nisl hendrerit commodo.", icon: <RiSoundModuleLine size={38} /> },
     ]
     useEffect(() => {
 
@@ -35,7 +38,7 @@ const OurService: React.FC = () => {
                 scrollTrigger: {
                     trigger: ".ourService",
                     start: "top bottom",
-                    end: "center center",
+                    end: "bottom bottom",
                     scrub: true
                 },
             }

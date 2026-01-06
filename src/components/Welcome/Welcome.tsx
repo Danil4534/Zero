@@ -15,7 +15,7 @@ const Welcome: React.FC = () => {
 
         gsap.timeline()
         gsap.fromTo(".welcomeSubtitle , .welcomeTitle, .welcomeBtn ", { y: 50, x: 0, opacity: 0.5 }, {
-            y: 0, x: 0, stagger: 0.5, opacity: 1, delay: 1.2, scrollTrigger: {
+            y: 0, x: 0, stagger: 0.5, opacity: 1, scrollTrigger: {
                 trigger: ".sectionWelcome",
                 start: "top bottom",
                 end: "bottom bottom",
@@ -23,10 +23,18 @@ const Welcome: React.FC = () => {
             },
         })
 
-        gsap.fromTo(".imgMan", { x: 50, opacity: 0, }, {
-            y: 0, x: 0, stagger: 0.5, opacity: 1, delay: 1.2, scrollTrigger: {
+        gsap.fromTo(".imgMan1", { x: 50, opacity: 0 }, {
+            y: 0, x: 0, stagger: 0.5, opacity: 1,  scrollTrigger: {
                 trigger: ".sectionWelcome",
-                start: "top bottom",
+                start: "top center",
+                end: "bottom bottom",
+                scrub: true
+            },
+        })
+         gsap.fromTo(".imgMan2", { x: -50, opacity: 0 }, {
+            y: 0, x: 0, stagger: 0.5, opacity: 1,  scrollTrigger: {
+                trigger: ".sectionWelcome",
+                start: "top center",
                 end: "bottom bottom",
                 scrub: true
             },
@@ -36,7 +44,7 @@ const Welcome: React.FC = () => {
     return (
         <section className="sectionWelcome">
             <div className="welcomeItem1">
-                <img src={Man1} className="imgMan" alt="" />
+                <img src={Man1} className="imgMan1" alt="" />
                 <div className="welcomeContent">
                     <h1 className="welcomeTitle">We complete every projects
                         extra care as customer need
@@ -48,7 +56,7 @@ const Welcome: React.FC = () => {
                 </div>
             </div>
             <div className="welcomeItem2">
-                <img src={Man2} className="imgMan" alt="" />
+                <img src={Man2} className="imgMan2" alt="" />
                 <div className="welcomeContent2">
                     <h1 className="welcomeTitle">We complete every projects
                         extra care as customer need

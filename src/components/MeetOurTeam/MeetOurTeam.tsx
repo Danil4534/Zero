@@ -34,22 +34,38 @@ const MeetOurTeam: React.FC = () => {
     ]
     useEffect(() => {
 
-        gsap.fromTo(
-            ".cardPeople",
-            { y: 50, opacity: 0 },
+       
+          gsap.fromTo(
+            ".contentTitle, .contentSubtitle",
+            { y: 100, opacity: 0 },
             {
                 y: 0,
                 opacity: 1,
                 stagger: 0.3,
                 scrollTrigger: {
-                    trigger: ".welcomeItem2",
-                    start: "top center",
-                    end: "center center",
+                    trigger: ".meetOurTeam",
+                    start: "center center",
+                    end: "bottom bottom",
                     scrub: true
                 },
             }
         );
-
+ gsap.fromTo(
+            ".cardPeople",
+            { y: 50, opacity: 0 },
+            {
+                y: 0,
+                opacity: 1,
+                
+                stagger: 0.3,
+                scrollTrigger: {
+                    trigger: ".meetOurTeam",
+                    start: "top center",
+                    end: "bottom bottom",
+                    scrub: true
+                },
+            }
+        );
     });
     return (
         <section className="meetOurTeam">
